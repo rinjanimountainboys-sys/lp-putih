@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AquaPure - Air Minum Kemasan Alami & Segar</title>
+    <style>
+        /* Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            color: #333;
+            line-height: 1.6;
+            background-color: #f8fdff;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0084ff;
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        .nav-links a:hover {
+            color: #0084ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            padding: 4rem 5%;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            color: #0369a1;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            color: #0c4a6e;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #0084ff;
+            color: white;
+            padding: 0.8rem 1.8rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .btn:hover {
+            background-color: #0066cc;
+        }
+
+        /* Features */
+        .features {
+            padding: 4rem 5%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.04);
+        }
+        .feature-card h3 {
+            color: #0084ff;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Products Section */
+        .products {
+            padding: 4rem 5%;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .products h2 {
+            margin-bottom: 2rem;
+            color: #0369a1;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-card {
+            border: 1px solid #e0f2fe;
+            border-radius: 8px;
+            padding: 1.5rem;
+            background: #fafafa;
+        }
+        .product-card h4 {
+            font-size: 1.2rem;
+            margin: 1rem 0 0.5rem;
+        }
+        .price {
+            color: #0084ff;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 2rem 5%;
+            margin-top: 2rem;
+        }
+        footer p {
+            font-size: 0.9rem;
+            color: #94a3b8;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigasi -->
+    <nav>
+        <div class="logo">AquaPure</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#keunggulan">Keunggulan</a></li>
+            <li><a href="#produk">Produk</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <h1>Kesegaran Alami di Setiap Tetesnya</h1>
+        <p>Diproses dari sumber mata air pegunungan terpilih dengan teknologi penyaringan modern untuk menjaga kesehatan keluarga Anda.</p>
+        <a href="#produk" class="btn">Pesan Sekarang</a>
+    </section>
+
+    <!-- Keunggulan -->
+    <section class="features" id="keunggulan">
+        <div class="feature-card">
+            <h3>100% Alami</h3>
+            <p>Diambil langsung dari sumber mata air pegunungan alami yang terjaga kebersihannya.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Kaya Mineral</h3>
+            <p>Mengandung mineral alami yang seimbang untuk memenuhi kebutuhan hidrasi harian Anda.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Higiensonis & Aman</h3>
+            <p>Diproses menggunakan standar sterilisasi tinggi dan terbebas dari kontaminasi berbahaya.</p>
+        </div>
+    </section>
+
+    <!-- Produk -->
+    <section class="products" id="produk">
+        <h2>Pilihan Varian Produk</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <h4>Kemasan Botol 330ml</h4>
+                <p>Praktis dibawa ke mana saja untuk aktivitas harian Anda.</p>
+                <div class="price">Rp 3.000</div>
+            </div>
+            <div class="product-card">
+                <h4>Kemasan Botol 600ml</h4>
+                <p>Ukuran pas untuk menemani olahraga dan perjalanan.</p>
+                <div class="price">Rp 5.000</div>
+            </div>
+            <div class="product-card">
+                <h4>Kemasan Botol 1500ml</h4>
+                <p>Kapasitas lebih besar untuk hidrasi maksimal seharian.</p>
+                <div class="price">Rp 8.000</div>
+            </div>
+            <div class="product-card">
+                <h4>Kemasan Galon 19L</h4>
+                <p>Pilihan tepat dan ekonomis untuk kebutuhan keluarga di rumah.</p>
+                <div class="price">Rp 20.000</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Kontak -->
+    <footer id="kontak">
+        <h3>Hubungi Kami</h3>
+        <p>WhatsApp Order: 0812-3456-7890 | Email: info@aquapure.com</p>
+        <p style="margin-top: 1rem;">&copy; 2026 AquaPure Indonesia. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
